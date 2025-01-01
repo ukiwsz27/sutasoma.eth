@@ -1,0 +1,43 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "Sutasoma: Journey to Decentralization"
+theme = ["ghostwriter", "plausible-hugo"]
+relativeURLS=true
+summaryLenght = 70
+disqusShortname = "sutasoma"
+copyright = "Andi Nugroho"
+pygmentsUseClasses=true
+paginate = "10" # Number of posts per page
+
+
+[permalinks]
+    posts = "/:year/:month/:day/:title/"
+
+[Params]
+    mainSections = ["posts"]
+    intro = true
+    headline = "blog"
+    description = "Decentralize All Things!"
+    twitter = "https://x.com/AN_CRYPTOs"
+    email = "sutasomablog@gmail.com"
+    opengraph = true
+    shareTwitter = true
+    shareFacebook = true
+    shareLinkedIn = true
+    rss = true
+    dateFormat = "Mon, Jan 2, 2006"
+    comments = true
+
+
+[menu]
+      [[menu.main]]
+        identifier = "about"
+        name = "about"
+        url = "/about/"
+        weight = -100
+
+      [[menu.main]]
+        identifier = "blog"
+        name = "all posts"
+        url = "/posts/"
+        weight = -110
